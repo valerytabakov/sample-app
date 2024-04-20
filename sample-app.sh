@@ -21,7 +21,7 @@ echo "CMD python3 /home/myapp/sample_app.py" >> tempdir/Dockerfile
 
 cd tempdir
 
-docker build -t sampleapp .
-docker run -t -d -p 8080:8080 --name samplerunning sampleapp
+sudo docker build -t sampleapp .
+sudo docker run -t -d -p 8080:8080 --name samplerunning sampleapp
 
-docker ps -a
+sudo docker ps -a
